@@ -36,7 +36,8 @@
         padding: 0;
     }
 
-    & > p{
+    & > p,
+    & > .flex-text{
         padding: 24px;
         font-size: 16px;
         line-height: 1.4;
@@ -47,8 +48,15 @@
         }
     }
 
+    & > .flex-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
     & > img {
         object-fit: cover;
+        max-width: 50%;
 
         @media screen and (max-width: $MEDIA_DESKTOP_TO_TABLET) {
             height: 37.05vw;

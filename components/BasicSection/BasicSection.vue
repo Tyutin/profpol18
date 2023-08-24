@@ -17,7 +17,7 @@
 
 <style lang="scss" scoped>
 .basic-section {
-    max-width: 1020px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 50px 0;
 
