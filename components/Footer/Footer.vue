@@ -10,14 +10,14 @@
             <div class="footer__half footer__half-contacts">
                 <div class="footer__contact-wrapper">
                     <span class="footer__contact">
-                        <img src="../../assets/img/icon_location_white.svg" alt="Иконка локации" class="footer__icon footer__icon_loc">
+                        <img src="img/icons/icon_location_white.svg" alt="Иконка локации" class="footer__icon footer__icon_loc">
                         Ижевск
                     </span>
                 </div>
                 <div class="footer__contact-wrapper">
-                    <a href="mailto:profpol18@yandex.ru" class="footer__contact">
-                        <img src="../../assets/img/icon_mail_white.svg" alt="Иконка электронной почты" class="footer__icon footer__icon_mail">
-                        profpol18@yandex.ru
+                    <a href="mailto:profpol18@mail.ru" class="footer__contact">
+                        <img src="img/icons/icon_mail_white.svg" alt="Иконка электронной почты" class="footer__icon footer__icon_mail">
+                        profpol18@mail.ru
                     </a>
                 </div>
             </div>
@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 20px;
     max-width: 1020px;
     margin: 0 auto;
     padding: 75px 0 20px;

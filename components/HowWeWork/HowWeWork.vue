@@ -7,7 +7,7 @@
             <WorkElement image="howWeWork2.svg" index="2." text="Заключение договора и выезд бригады специалистов к заказчику" arrow="true"/>
         </li>
         <li class="how-we-work__element">
-            <WorkElement image="howWeWork3.svg" index="3." text="Проведение работ по бурению скважины" subtext="(срок зависит от грунта и оговаривается заранее)"/>
+            <WorkElement image="howWeWork3.svg" index="3." text="Проведение работ по укладке покрытия"/>
         </li>
         <li class="how-we-work__element">
             <WorkElement image="howWeWork4.svg" index="4." text="Проверка и прием выполненных работ" arrow="true"/>

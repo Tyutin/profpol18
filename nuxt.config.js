@@ -4,19 +4,20 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Акватерра - бурение скважин на воду в Ижевске | Обустройство скважин',
+    title: 'ПрофПол - укладка напольных покрытий в Ижевске',
     htmlAttrs: {
       lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Бурение и обустройство скважин на воду. Монтаж систем водопровода и канализации. Обустройство систем отопления и тёплых полов. Гарантия качества!' },
-      { name: 'keywords', content: 'акватера, акватерра ижевск, акватерра, акватерра18, бурение скважин ижевск, монтаж водопровода, монтаж канализации бурение, скважина, бурение скважин, обустройство скважин, автоматизация скважин, отопление, система отопления, теплый пол, водопровод, канализация' },
+      { hid: 'description', name: 'description', content: 'ПрофПол - ваш надежный партнер в мире полов! Строим уют и комфорт с нуля: профессиональная укладка полов всех видов. От современных дизайнов до классики - мы создаем прочные и стильные основы вашего пространства. Доверьте нам свои полы, и каждый шаг станет удовольствием!' },
+      { name: 'keywords', content: 'Укладка кварцвинила и SPC, Монтаж плинтуса МДФ и дюрополимер, Укладка ламината, Укладка паркетной доски, Укладка коммерческого линолеума, Укладка ПВХ' },
       // { name: 'yandex-verification', content: 'acc04ad192ac3e00' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ],
     // script: [
     //   { src: '//code.jivo.ru/widget/CH3AMXtgq9', body: true, async: true, defer: true }

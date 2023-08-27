@@ -51,7 +51,7 @@
         </div>
         <div class="callback-popup__error-screen" v-if="mode === 'error'">
             <p class="callback-popup__header">Что-то пошло <nobr>не так :(</nobr></p>
-            <p class="callback-popup__subheader">Попробуйте обновить страницу и отправить заявку ещё раз либо позвоните нам <br> <a href="tel:+79512057011">8 (951) 205-70-11</a></p>
+            <p class="callback-popup__subheader">Попробуйте обновить страницу и отправить заявку ещё раз либо позвоните нам <br> <a href="tel:+79829936621">8 (982) 993-66-21</a></p>
         </div>
     </div>
 </template>
@@ -167,7 +167,7 @@
     &__submit {
         font-size: 20px;
         height: 45px;
-        background-color: #6eafff;
+        background-color: #FE6600CE;
         color: #fff;
         border-width: 0;
         border-radius: 8px;
@@ -188,7 +188,7 @@
         }
 
         &:hover{
-            background-color: #6e8dff;
+            background-color: $COLOR_ORANGE;
         }
 
         @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {

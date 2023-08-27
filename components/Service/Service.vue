@@ -172,7 +172,7 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
   &__collapse-list {
     display: flex;
     flex-direction: column;
-    margin: 40px 0;
+    margin: 40px 0 0;
     border: 2px solid $COLOR_GREEN;
     border-radius: 6px;
   }
@@ -203,7 +203,7 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
   &__price-wrapper {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px 10px;
 
     @media (max-width: 500px) {
       overflow: scroll;

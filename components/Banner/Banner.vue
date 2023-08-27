@@ -2,26 +2,30 @@
     <section class="banner">
         <div class="container banner_container">
             <div class="banner_info">
-                <h1 class="banner_header">Скважины на воду <nobr>в Ижевске</nobr> <nobr>за 3 дня</nobr></h1>
-                <p>Компактная буровая установка легко и быстро монтируется на ваш участок, аккуратно и без повреждения ландшафта.</p>
+                <h1 class="banner__title">Укладка напольных покрытий <nobr>в Ижевске</nobr></h1>
+                <p class="banner__subtitle">Строим уют и комфорт с нуля: профессиональная укладка полов всех видов. От современных дизайнов до классики - мы создаем прочные и стильные основы вашего пространства.</p>
                 <CallbackButton/>
             </div>
-            <img src="./Banner.webp" alt="Загородный дом с грунтовыми водами под ним">
+            <img class="banner__image" src="./Banner.jpg" alt="Загородный дом с грунтовыми водами под ним">
         </div>
     </section>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
 
 <style lang="scss" scoped>
 .banner {
-    background-color: #94d0fc;
+    margin: 30px auto 60px;
+    background-color: $COLOR_ORANGE;
+    border-radius: 15px;
+    overflow: hidden;
 
         @media (max-width: 1019px) {
+            max-width: 760px;
             padding-bottom: 30px;
         }
 
@@ -29,6 +33,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        column-gap: 30px;
+        padding: 0;
 
         @media (max-width: 1019px) {
             flex-direction: column-reverse;
@@ -36,10 +42,11 @@
     }
 
     &_info {
-        max-width: 400px;
+        padding-left: 20px;
 
         @media (max-width: 1019px) {
             max-width: 570px;
+            padding: 0 20px;
         }
 
         & p {
@@ -47,14 +54,18 @@
         }
     }
 
-    &_header{
-        max-width: 330px;
-        max-height: 100px;
+    &__title{
         margin-bottom: 30px;
+        color: $WHITE;
 
         @media (max-width: $MEDIA_DESKTOP_TO_TABLET) {
             max-width: unset;
-            max-height: 87px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        @media (max-width: $MEDIA_TABLET_TO_MOBILE) {
+            font-size: 36px;
             margin-bottom: 24px;
         }
 
@@ -63,19 +74,23 @@
         }
     }
 
-    & img {
-        margin: 0 30px;
-        width: 550px;
+    &__subtitle {
+      color: $WHITE;
+    }
+
+    &__image {
         height: 382px;
 
         @media (max-width: 1019px) {
             margin-bottom: 30px;
-            height: unset;
+            height: 320px;
+            width: 100%;
+            object-fit: cover;
         }
 
         @media screen and (max-width: 570px) {
             width: 100%;
-            height: calc((100vw - 20px)* 0.6945);
+            height: calc((100vw - 20px)* 0.55);
         }
     }
 }

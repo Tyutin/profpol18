@@ -2,6 +2,7 @@
   <div v-scroll-lock="callbackPopupIsOpen">
     <Header />
     <Banner />
+
     <CallbackSection />
     <Benefits />
 
@@ -24,22 +25,22 @@
         :banner-text="uslugi.laminat.bannerText"
         :price="uslugi.laminat.price"
         :cases="uslugi.laminat.cases"
-        :additional-text="uslugi.laminat.additionalText"
         :reversed="true"
       />
     </BasicSection>
 
-    <BasicSection waved=true>
+    <BasicSection>
       <Service
         :id="uslugi.kovrolin.id"
         :title="uslugi.kovrolin.title"
         :imagepath="uslugi.kovrolin.bannerImage"
         :banner-text="uslugi.kovrolin.bannerText"
         :price="uslugi.kovrolin.price"
-        :cases="uslugi.kovrolin.cases"
         :reversed="false"
       />
     </BasicSection>
+
+    <CallbackSection />
 
     <BasicSection waved=true>
       <Service
@@ -71,6 +72,7 @@
         :title="uslugi.polirovkaLinoleuma.title"
         :imagepath="uslugi.polirovkaLinoleuma.bannerImage"
         :banner-text="uslugi.polirovkaLinoleuma.bannerText"
+        :price="uslugi.polirovkaLinoleuma.price"
         :reversed="true"
       />
     </BasicSection>
@@ -87,7 +89,7 @@
       />
     </BasicSection>
 
-    <BasicSection>
+    <BasicSection waved=true>
       <Service
         :id="uslugi.plintus.id"
         :title="uslugi.plintus.title"
@@ -99,23 +101,17 @@
       />
     </BasicSection>
 
-
-
-
-
-
-    <CallbackSection />
-    <BasicSection waved=true>
-      <template>
-        <div class="anchor" id="o_kompanii"/>
-        <div class="container">
-          <h2>О компании</h2>
-          <p>Компания «Акватерра» на протяжении семи лет профессионально занимается такими видами работ, как:</p>
-          <AboutList />
-          <p>Мы полностью уверены в качестве наших услуг и предоставляем вам гарантию 2 года на наши работы по бурению скважин.</p>
-        </div>
-      </template>
+    <BasicSection>
+      <Service
+        :id="uslugi.dopRaboty.id"
+        :title="uslugi.dopRaboty.title"
+        :imagepath="uslugi.dopRaboty.bannerImage"
+        :banner-text="uslugi.dopRaboty.bannerText"
+        :price="uslugi.dopRaboty.price"
+        :reversed="false"
+      />
     </BasicSection>
+
     <BasicSection>
       <template>
         <div class="anchor" id="kak_my_rabotaem"/>
@@ -126,6 +122,7 @@
         </div>
       </template>
     </BasicSection>
+
     <Footer id="contacts"/>
     <Lightbox>
       <CallbackPopup/>
@@ -319,33 +316,6 @@ export default {
               value: 'от 350р м/кв'
             },
           ],
-          cases: [
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            }
-          ]
         },
         linoleum: {
           id: 'linoleum',
@@ -390,33 +360,6 @@ export default {
               value: 'от 450р м/кв'
             },
           ],
-          cases: [
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            }
-          ]
         },
         svarkaLinoleuma: {
           id: 'svarka-linoleuma',
@@ -435,33 +378,6 @@ export default {
               value: 'от 180р м/пог'
             },
           ],
-          cases: [
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            }
-          ]
         },
         polirovkaLinoleuma: {
           id: 'polirovka-linoleuma',
@@ -471,6 +387,12 @@ export default {
             'Мы единственная компания в Ижевске которая профессионально и с гарантией полирует коммерческий линолеум. Отсутствие ухода за покрытием и его повседневная эксплуатация ведет к быстрому износу и изменению первоначального внешнего вида линолеума.',
             'Грязь, особенно с наличием частиц песка и повышенные нагрузки на напольное покрытие въедается и повреждает верхний поверхностный слой линолеума и тем самым создает неопрятный внешний вид.',
             'Особенно это актуально в помещениях с высокой проходимостью: торговые павильоны, офисные помещения, производственные помещения и т. п.. В таких помещениях видны протоптанные темно-серые дорожки, особенно в проходных местах и во входной группе, а также большое количество мелких царапин на верхнем слое линолеума.',
+          ],
+          price: [
+            {
+              name: 'Восстановление, шлифовка, полировка коммерческого линолеума',
+              value: 'от 200р м/кв'
+            },
           ],
         },
         parket: {
@@ -495,33 +417,6 @@ export default {
               value: 'от 500р м/кв'
             },
           ],
-          cases: [
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            }
-          ]
         },
         plintus: {
           id: 'plintus',
@@ -565,32 +460,85 @@ export default {
               value: 'от 500р м/пог'
             },
           ],
-          cases: [
+        },
+        dopRaboty: {
+          id: 'dop-raboty',
+          title: 'Дополнительные работы',
+          bannerImage: 'dop-raboty.jpg',
+          bannerText: [
+            'Воплощение идеальных полов - наша миссия! Мы не просто укладываем полы, мы создаем искусство на каждой поверхности. Наша забота о долговечности и красоте ваших полов включает в себя важные этапы дополнительных работ.',
+            'Очистка основания – первый шаг к надежной основе. Мы бережно избавляемся от старых остатков и загрязнений, чтобы новое покрытие имело надежное сцепление.',
+            'Демонтаж старого напольного покрытия – необходимый этап работ. Будь то дерево, ламинат, ковровое покрытие или плитка, мы проводим его разборку профессионально и без следов, освобождая место для вашего будущего пола.',
+          ],
+          price: [
             {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
+              name: 'Очистка основания с приминением шпателя',
+              value: 'от 30р м/кв'
             },
             {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
+              name: 'Обеспыливание основания (промышленный пылесос)',
+              value: 'от 50р м/кв'
             },
             {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
+              name: 'Грунтование основания в 1 слой',
+              value: 'от 50р м/кв'
             },
             {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
+              name: 'Частичный ремонт стяжки черновым раствором',
+              value: 'от 500р м/кв'
             },
             {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            }
+              name: 'Стоимость работ по подготовке основания, может быть расчита посменно, по договоренности',
+              value: 'от 7000р / смена'
+            },
+            {
+              name: 'Устройство наливных самонивелирующихся полов в 1 слой, до 5мм',
+              value: 'от 250р м/кв'
+            },
+            {
+              name: 'Стыковка с плиткой на необходимом уровне, наливным самонивелирующим составом',
+              value: 'от 1000р м/пог'
+            },
+            {
+              name: 'Герметизация шва с плиткой',
+              value: 'от 300р м/пог'
+            },
+            {
+              name: 'Подпил дверной коробки с одной стороны, два запила',
+              value: 'от 300р / шт'
+            },
+            {
+              name: 'Монтаж чернового пола (фанера, quick deck) в 1 слой на саморезы по лагам ',
+              value: 'от 350р м/кв'
+            },
+            {
+              name: 'Демонтаж линолеума',
+              value: 'от 100р м/кв'
+            },
+            {
+              name: 'Демонтаж ковролина',
+              value: 'от 100р м/кв'
+            },
+            {
+              name: 'Демонтаж ламината',
+              value: 'от 70р м/кв'
+            },
+            {
+              name: 'Демонтаж паркетной доски',
+              value: 'от 70р м/кв'
+            },
+            {
+              name: 'Демонтаж порогов',
+              value: 'от 50р м/пог'
+            },
+            {
+              name: 'Демонтаж плинтуса пластикового',
+              value: 'от 50р м/пог'
+            },
+            {
+              name: 'Демонтаж плинтуса деревянного',
+              value: 'от 70р м/пог'
+            },
           ]
         },
       }

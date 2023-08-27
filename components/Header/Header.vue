@@ -8,7 +8,7 @@
                 <div class="header__contacts">
                     <span class="header__location">Ижевск</span>
                     <ul class="header__phone-list">
-                        <li class="header__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li>
+                        <!-- <li class="header__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li> -->
                         <li class="header__phone"><a href="tel:+79829936621">8 (982) 993-66-21</a></li>
                     </ul>
                 </div>
@@ -35,7 +35,7 @@
                         <nuxt-link to="#plintus">Плинтус</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="#o_kompanii">о компании</nuxt-link>
+                        <nuxt-link to="#dop-raboty">доп. работы</nuxt-link>
                     </li>
                     <li>
                         <nuxt-link to="#kak_my_rabotaem">как мы работаем</nuxt-link>
@@ -210,7 +210,7 @@
 
     &__contacts {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         font-family: 'Bebas', sans-serif;
         font-weight: bold;
         color: $COLOR_ORANGE;

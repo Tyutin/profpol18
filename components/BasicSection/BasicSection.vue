@@ -17,9 +17,9 @@
 
 <style lang="scss" scoped>
 .basic-section {
-    max-width: 1120px;
+    max-width: 1020px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 60px 0 40px;
 
         @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
             padding: 30px 0;

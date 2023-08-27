@@ -7,7 +7,7 @@
                 <img v-else src="./icon_phone3.svg" alt="Иконка телефона">
             </div>
             <ul class="callback__phone-list">
-                <li class="callback__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li>
+                <!-- <li class="callback__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li> -->
                 <li class="callback__phone"><a href="tel:+79829936621">8-982-993-66-21</a></li>
             </ul>
         </div>
@@ -42,6 +42,7 @@
     &__phone-list {
         display: flex;
         justify-content: center;
+        padding-left: 20px;
 
         @media screen and (max-width:$MEDIA_DESKTOP_TO_TABLET) {
             flex-direction: column;
@@ -59,22 +60,22 @@
             font-size: 35px;
         }
 
-        &:first-of-type {
-            @media screen and (min-width: $MEDIA_TABLET_TO_DESKTOP) {
-                position: relative;
-                margin-right: 40px;
+        // &:first-of-type {
+        //     @media screen and (min-width: $MEDIA_TABLET_TO_DESKTOP) {
+        //         position: relative;
+        //         margin-right: 40px;
 
-                &::after{
-                    content: "";
-                    position: absolute;
-                    width: 4px;
-                    height: 100%;
-                    right: -22px;
-                    background-color: #fff;
-                    top: -4px;
-                }
-            }
-        }
+        //         &::after{
+        //             content: "";
+        //             position: absolute;
+        //             width: 4px;
+        //             height: 100%;
+        //             right: -22px;
+        //             background-color: #fff;
+        //             top: -4px;
+        //         }
+        //     }
+        // }
 
         @media screen and (max-width: 319px) {
             font-size: 29px;

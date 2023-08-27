@@ -1,7 +1,7 @@
 <template>
     <div class="work-element">
         <div class="work-element__image-wrapper " :class="{ 'work-element__image-wrapper_with-arrow': arrow }">
-            <img :src="require('../../assets/img/rounds/' + image)" alt="">
+            <img :src="`img/icons/howWeWork/${image}`" alt="">
         </div>
         <p class="work-element__text">
             <span class="work-element__index" v-if="index">
@@ -63,7 +63,7 @@
                     content: '';
                     width: 105px;
                     height: 14px;
-                    background-image: url('./strelka.svg');
+                    background-image: url('./strelka3.svg');
                 }
             }
         }
@@ -93,7 +93,7 @@
     }
 
     &__index {
-        color: $COLOR_BLUE_LIGHT;
+        color: $COLOR_GREEN;
         font-size: 22px;
 
         @media screen and (max-width: 800px) {
