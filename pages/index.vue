@@ -2,12 +2,12 @@
   <div v-scroll-lock="callbackPopupIsOpen">
     <Header />
     <Banner />
-    <Workflow />
     <CallbackSection />
     <Benefits />
 
     <BasicSection waved=true>
       <Service
+        :id="uslugi.kvarcvinil.id"
         :title="uslugi.kvarcvinil.title"
         :imagepath="uslugi.kvarcvinil.bannerImage"
         :banner-text="uslugi.kvarcvinil.bannerText"
@@ -18,6 +18,7 @@
 
     <BasicSection waved=true>
       <Service
+        :id="uslugi.laminat.id"
         :title="uslugi.laminat.title"
         :imagepath="uslugi.laminat.bannerImage"
         :banner-text="uslugi.laminat.bannerText"
@@ -30,6 +31,7 @@
 
     <BasicSection waved=true>
       <Service
+        :id="uslugi.kovrolin.id"
         :title="uslugi.kovrolin.title"
         :imagepath="uslugi.kovrolin.bannerImage"
         :banner-text="uslugi.kovrolin.bannerText"
@@ -41,6 +43,7 @@
 
     <BasicSection waved=true>
       <Service
+        :id="uslugi.linoleum.id"
         :title="uslugi.linoleum.title"
         :imagepath="uslugi.linoleum.bannerImage"
         :banner-text="uslugi.linoleum.bannerText"
@@ -52,28 +55,7 @@
 
     <BasicSection waved=true>
       <Service
-        :title="uslugi.parket.title"
-        :imagepath="uslugi.parket.bannerImage"
-        :banner-text="uslugi.parket.bannerText"
-        :price="uslugi.parket.price"
-        :cases="uslugi.parket.cases"
-        :reversed="false"
-      />
-    </BasicSection>
-
-    <BasicSection waved=true>
-      <Service
-        :title="uslugi.plintus.title"
-        :imagepath="uslugi.plintus.bannerImage"
-        :banner-text="uslugi.plintus.bannerText"
-        :price="uslugi.plintus.price"
-        :cases="uslugi.plintus.cases"
-        :reversed="true"
-      />
-    </BasicSection>
-
-    <BasicSection waved=true>
-      <Service
+        :id="uslugi.svarkaLinoleuma.id"
         :title="uslugi.svarkaLinoleuma.title"
         :imagepath="uslugi.svarkaLinoleuma.bannerImage"
         :banner-text="uslugi.svarkaLinoleuma.bannerText"
@@ -83,14 +65,44 @@
       />
     </BasicSection>
 
-    <BasicSection>
+    <BasicSection waved=true>
       <Service
+        :id="uslugi.polirovkaLinoleuma.id"
         :title="uslugi.polirovkaLinoleuma.title"
         :imagepath="uslugi.polirovkaLinoleuma.bannerImage"
         :banner-text="uslugi.polirovkaLinoleuma.bannerText"
+        :reversed="true"
+      />
+    </BasicSection>
+
+    <BasicSection waved=true>
+      <Service
+        :id="uslugi.parket.id"
+        :title="uslugi.parket.title"
+        :imagepath="uslugi.parket.bannerImage"
+        :banner-text="uslugi.parket.bannerText"
+        :price="uslugi.parket.price"
+        :cases="uslugi.parket.cases"
         :reversed="false"
       />
     </BasicSection>
+
+    <BasicSection>
+      <Service
+        :id="uslugi.plintus.id"
+        :title="uslugi.plintus.title"
+        :imagepath="uslugi.plintus.bannerImage"
+        :banner-text="uslugi.plintus.bannerText"
+        :price="uslugi.plintus.price"
+        :cases="uslugi.plintus.cases"
+        :reversed="true"
+      />
+    </BasicSection>
+
+
+
+
+
 
     <CallbackSection />
     <BasicSection waved=true>
@@ -133,6 +145,7 @@ export default {
     return {
       uslugi: {
         kvarcvinil: {
+          id: 'kvarcvinil',
           title: 'Укладка кварцвинила',
           bannerImage: 'ukladka-kvarcvinila.jpg',
           bannerText: [
@@ -198,6 +211,7 @@ export default {
           ]
         },
         laminat: {
+          id: 'laminat',
           title: 'Укладка ламината',
           bannerImage: 'ukladka-laminata.jpg',
           bannerText: [
@@ -281,6 +295,7 @@ export default {
           ]
         },
         kovrolin: {
+          id: 'kovrolin',
           title: 'Укладка ковролина',
           bannerImage: 'ukladka-kovrolina.jpg',
           bannerText: [
@@ -333,6 +348,7 @@ export default {
           ]
         },
         linoleum: {
+          id: 'linoleum',
           title: 'Укладка линолеума',
           bannerImage: 'ukladka-linoleuma.jpg',
           bannerText: [
@@ -402,7 +418,63 @@ export default {
             }
           ]
         },
+        svarkaLinoleuma: {
+          id: 'svarka-linoleuma',
+          title: 'Сварка линолеума',
+          bannerImage: 'svarka-linoleuma.jpg',
+          bannerText: [
+            'Мы единственная компания в Ижевске которая может профессионально и с гарантией сварить швы линолеума ПВХ шнуром. Для того, чтобы линолеум прослужил вам как можно дольше, швы не становились черными от грязи, а стыки не «отходили» от попадания влаги при уборке помещения, швы линолеума необходимо в обязательном порядке заваривать.',
+          ],
+          price: [
+            {
+              name: 'Сварка швов линолеума холодным способом',
+              value: 'от 120р м/пог'
+            },
+            {
+              name: 'Сварка швов линолеума горячим способом (ПВХ шнур)',
+              value: 'от 180р м/пог'
+            },
+          ],
+          cases: [
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            }
+          ]
+        },
+        polirovkaLinoleuma: {
+          id: 'polirovka-linoleuma',
+          title: 'Полировка линолеума',
+          bannerImage: 'polirovka-linoleuma.png',
+          bannerText: [
+            'Мы единственная компания в Ижевске которая профессионально и с гарантией полирует коммерческий линолеум. Отсутствие ухода за покрытием и его повседневная эксплуатация ведет к быстрому износу и изменению первоначального внешнего вида линолеума.',
+            'Грязь, особенно с наличием частиц песка и повышенные нагрузки на напольное покрытие въедается и повреждает верхний поверхностный слой линолеума и тем самым создает неопрятный внешний вид.',
+            'Особенно это актуально в помещениях с высокой проходимостью: торговые павильоны, офисные помещения, производственные помещения и т. п.. В таких помещениях видны протоптанные темно-серые дорожки, особенно в проходных местах и во входной группе, а также большое количество мелких царапин на верхнем слое линолеума.',
+          ],
+        },
         parket: {
+          id: 'parket',
           title: 'Укладка паркетной доски',
           bannerImage: 'ukladka-parketa.jpg',
           bannerText: [
@@ -452,6 +524,7 @@ export default {
           ]
         },
         plintus: {
+          id: 'plintus',
           title: 'Укладка плинтуса',
           bannerImage: 'ukladka-plintusa.jpg',
           bannerText: [
@@ -519,59 +592,6 @@ export default {
               alt: 'Пример работ по укладке кварцвинила'
             }
           ]
-        },
-        svarkaLinoleuma: {
-          title: 'Сварка линолеума',
-          bannerImage: 'svarka-linoleuma.jpg',
-          bannerText: [
-            'Мы единственная компания в Ижевске которая может профессионально и с гарантией сварить швы линолеума ПВХ шнуром. Для того, чтобы линолеум прослужил вам как можно дольше, швы не становились черными от грязи, а стыки не «отходили» от попадания влаги при уборке помещения, швы линолеума необходимо в обязательном порядке заваривать.',
-          ],
-          price: [
-            {
-              name: 'Сварка швов линолеума холодным способом',
-              value: 'от 120р м/пог'
-            },
-            {
-              name: 'Сварка швов линолеума горячим способом (ПВХ шнур)',
-              value: 'от 180р м/пог'
-            },
-          ],
-          cases: [
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc1.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc2.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc3.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc4.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            },
-            {
-              src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
-              title: 'Кварцвинил ',
-              alt: 'Пример работ по укладке кварцвинила'
-            }
-          ]
-        },
-        polirovkaLinoleuma: {
-          title: 'Полировка линолеума',
-          bannerImage: 'polirovka-linoleuma.png',
-          bannerText: [
-            'Мы единственная компания в Ижевске которая профессионально и с гарантией полирует коммерческий линолеум. Отсутствие ухода за покрытием и его повседневная эксплуатация ведет к быстрому износу и изменению первоначального внешнего вида линолеума.',
-            'Грязь, особенно с наличием частиц песка и повышенные нагрузки на напольное покрытие въедается и повреждает верхний поверхностный слой линолеума и тем самым создает неопрятный внешний вид.',
-            'Особенно это актуально в помещениях с высокой проходимостью: торговые павильоны, офисные помещения, производственные помещения и т. п.. В таких помещениях видны протоптанные темно-серые дорожки, особенно в проходных местах и во входной группе, а также большое количество мелких царапин на верхнем слое линолеума.',
-          ],
         },
       }
     }

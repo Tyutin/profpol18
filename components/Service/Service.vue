@@ -1,5 +1,6 @@
 <template>
   <div class="service">
+    <div class="anchor" :id="id" />
     <h2 class="service__title">{{title}}</h2>
 
     <div class="service__banner"  :class="{'service__banner-reversed' : reversed}">
@@ -81,6 +82,10 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
       CoolLightBox,
     },
     props: {
+      id: {
+        type: String,
+        default: ''
+      },
       title: {
         type: String,
         default: ''
@@ -156,6 +161,7 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
 <style lang="scss" scoped>
 .service {
+  padding: 0 10px;
   @media (max-width: 1023px) {
     padding: 0 20px;
   }
@@ -167,12 +173,12 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
     display: flex;
     flex-direction: column;
     margin: 40px 0;
-    border: 2px solid $COLOR_ORANGE_SECTION;
+    border: 2px solid $COLOR_GREEN;
     border-radius: 6px;
   }
 
   &__collapse-item {
-    border-bottom: 1px solid $COLOR_ORANGE_SECTION;
+    border-bottom: 1px solid $COLOR_GREEN;
 
     &:last-of-type {
       border: none;
@@ -254,7 +260,8 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
     row-gap: 15px;
     width: 50%;
     padding: 24px;
-    background-color: $COLOR_ORANGE_SECTION;
+    background-color: $COLOR_GREEN;
+    color: $WHITE;
 
     @media (max-width: 1023px) {
       width: 100%;

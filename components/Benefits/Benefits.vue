@@ -22,20 +22,23 @@
 
 <script>
     export default {
-        
+
     }
 </script>
 
 <style lang="scss" scoped>
 .benefits {
-    height: 292px;
-    padding-bottom: 13px;
-    background-image: url('./benefits_bg.webp');
+    height: 390px;
+    padding-bottom: 17px;
+    background-image: url('./benefits_bg.png');
     background-position: center;
+    display: flex;
+    align-items: flex-end;
 
     & .container {
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         @media screen and (max-width:767px) {
             height: 100%;
@@ -47,7 +50,7 @@
         display: flex;
         flex-wrap: wrap;
         margin-left: 20px;
-        padding: 75px 0 30px;
+        padding: 45px 0;
 
         @media screen and (min-width:769px) {
             margin-left: 40px;

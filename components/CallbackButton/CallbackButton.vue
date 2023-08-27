@@ -24,7 +24,7 @@
     box-sizing: border-box;
     font-size: 19px;
     font-weight: bold;
-    color: #41a8f7;
+    color: $COLOR_GREEN;
     box-shadow: 4px 4px 11px 3px rgb(35 21 152 / 20%);
     background-color: #fff;
     cursor: pointer;
@@ -38,7 +38,7 @@
         @media screen and (min-width: $MEDIA_TABLET_TO_DESKTOP) {
             transform: rotate(-1deg);
         }
-        color: #0085eb;
+        color: $COLOR_ORANGE;
     }
 }
 </style>

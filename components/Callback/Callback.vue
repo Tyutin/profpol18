@@ -7,8 +7,8 @@
                 <img v-else src="./icon_phone3.svg" alt="Иконка телефона">
             </div>
             <ul class="callback__phone-list">
-                <li class="callback__phone"><a href="tel:+73412470065">8 (3412) 47-00-65</a></li>
-                <li class="callback__phone"><a href="tel:+79512057011">8-951-205-70-11</a></li>
+                <li class="callback__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li>
+                <li class="callback__phone"><a href="tel:+79829936621">8-982-993-66-21</a></li>
             </ul>
         </div>
         <div class="callback__button-wrapper">
@@ -36,7 +36,7 @@
     padding: 0 10px;
 
     &__heading {
-        color: $COLOR_BLUE_CALLBACK;
+        color: $WHITE;
     }
 
     &__phone-list {
@@ -154,18 +154,18 @@
             }
 
             &__phone {
-                color: $COLOR_BLUE_LIGHT;
+                color: $COLOR_GRAY_BASIC;
                 &:first-of-type {
                     &::after{
-                        background-color: $COLOR_BLUE_LIGHT;
+                        background-color: $COLOR_GRAY_BASIC;
                     }
                 }
             }
-            
-            &__phone-icon, 
-            &__phone-icon::after, 
+
+            &__phone-icon,
+            &__phone-icon::after,
             &__phone-icon::before {
-                background-color: #5db0f91a;
+                background-color: #4CAF5040;
             }
         }
     }

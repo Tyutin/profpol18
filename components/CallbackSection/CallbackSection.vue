@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        
+
     }
 </script>
 
@@ -14,7 +14,7 @@
 .callback-section {
     position: relative;
     padding: 40px 0;
-    background-color: $COLOR_BLUE_H1;
+    background-color: $COLOR_GREEN;
 
         @media screen and (max-width:$MEDIA_DESKTOP_TO_TABLET) {
             padding: 30px 0;
@@ -25,7 +25,7 @@
         content: "";
         width: 100%;
         height: 21.5px;
-        background-image: url('./waveFull2.svg');
+        background-image: url('./waveFull3.svg');
         z-index: 1;
         background-repeat: no-repeat;
         background-size: cover;

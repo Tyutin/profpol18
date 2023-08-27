@@ -6,12 +6,10 @@
                     <img src="./logo.svg" alt="Логотип Акватерра">
                 </nuxt-link>
                 <div class="header__contacts">
-                    <a href="https://yandex.ru/maps/-/CCUJ5AxD-C" target="_blank" class="header__location">
-                        Ижевск
-                    </a>
+                    <span class="header__location">Ижевск</span>
                     <ul class="header__phone-list">
-                        <li class="header__phone"><a href="tel:+73412470065">8 (3412) 47-00-65</a></li>
-                        <li class="header__phone"><a href="tel:+79512057011">8 (951) 205-70-11</a></li>
+                        <li class="header__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li>
+                        <li class="header__phone"><a href="tel:+79829936621">8 (982) 993-66-21</a></li>
                     </ul>
                 </div>
                 <button class="header__toggle" :class="{'header__toggle-active' : isMenuOpen}" @click="toggleMenuOpen"/>
@@ -19,16 +17,22 @@
             <nav class="header__nav" :class="{'header__nav-active' : isMenuOpen}" @click="closeMenu">
                 <ul>
                     <li>
-                        <nuxt-link to="#burenie_skvajin">бурение скважин</nuxt-link>
+                        <nuxt-link to="#kvarcvinil">Кварцвинил</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="#obustroistvo_i_avtomatizaciya">обустройство и автоматизация</nuxt-link>
+                        <nuxt-link to="#laminat">Ламинат</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="#vodoprovod_i_kanalizaciya">водопровод и канализация</nuxt-link>
+                        <nuxt-link to="#kovrolin">Ковролин</nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="#otoplenie_i_teply_pol">отопление</nuxt-link>
+                        <nuxt-link to="#linoleum">Линолеум</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#parket">Паркет</nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="#plintus">Плинтус</nuxt-link>
                     </li>
                     <li>
                         <nuxt-link to="#o_kompanii">о компании</nuxt-link>
@@ -86,8 +90,8 @@
         width: 40px;
         height: 34px;
         background-color: #fff;
-        border-top: 4px solid $COLOR_BLUE_H1;
-        border-bottom: 4px solid $COLOR_BLUE_H1;
+        border-top: 4px solid $COLOR_ORANGE;
+        border-bottom: 4px solid $COLOR_ORANGE;
         transition: 0.3s;
 
         @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
@@ -102,7 +106,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background-color: $COLOR_BLUE_H1;
+            background-color: $COLOR_ORANGE;
             transition: all 0.3s;
         }
 
@@ -124,7 +128,7 @@
     }
 
     &__nav {
-        font-size: 18px;
+        font-size: 20px;
         font-family: 'Bebas', sans-serif;
         text-transform: uppercase;
 
@@ -135,7 +139,7 @@
         @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
             position: absolute;
             right: 0;
-            top: -250%;
+            top: -300%;
             width: 100%;
             padding: 10px;
             background-color: #fff;
@@ -162,14 +166,14 @@
         & a {
             display: block;
             padding-bottom: 14px;
-            transition: all 0.2s ease;
+            transition: color 0.2s ease;
 
             &:hover {
-                color: $COLOR_BLUE_H1;
+                color: $COLOR_ORANGE;
 
                 @media screen and (min-width: $MEDIA_BIG_MOBILE_TO_TABLET) {
                     padding-bottom: 12px;
-                    border-bottom: 2px solid $COLOR_BLUE_H1;
+                    border-bottom: 2px solid $COLOR_ORANGE;
                 }
             }
 
@@ -209,7 +213,7 @@
         align-items: baseline;
         font-family: 'Bebas', sans-serif;
         font-weight: bold;
-        color: $COLOR_BLUE_H1;
+        color: $COLOR_ORANGE;
 
         @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
             display: none;
@@ -227,7 +231,7 @@
             content: "";
             width: 13px;
             height: 18px;
-            background-image: url('../../assets/img/icon_location_blue.svg');
+            background-image: url('../../static/img/icons/icon_location_orange.svg');
             background-size: cover;
             left: -20px;
             background-repeat: no-repeat;
@@ -243,7 +247,7 @@
             content: "";
             width: 13px;
             height: 18px;
-            background-image: url('../../assets/img/icon_phone_blue.svg');
+            background-image: url('../../static/img/icons/icon_phone_orange.svg');
             background-size: contain;
             top: 4px;
             left: -20px;
