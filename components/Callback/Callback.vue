@@ -3,12 +3,12 @@
         <h2 class="callback__heading">Появились вопросы? <nobr>Звоните нам!</nobr></h2>
         <div class="callback__phone-list-wrapper">
             <div class="callback__phone-icon">
-                <img v-if="isfooter == 'footer'" src="./icon_phone_lightblue.svg" alt="Иконка телефона">
-                <img v-else src="./icon_phone3.svg" alt="Иконка телефона">
+                <img v-if="isfooter == 'footer'" src="img/icons/icon_phone_lightblue.svg" alt="Иконка телефона">
+                <img v-else src="img/icons/icon_phone3.svg" alt="Иконка телефона">
             </div>
             <ul class="callback__phone-list">
                 <!-- <li class="callback__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li> -->
-                <li class="callback__phone"><a href="tel:+79829936621">8-982-993-66-21</a></li>
+                <li class="callback__phone"><a href="tel:+79226803890">8-922-680-38-90</a></li>
             </ul>
         </div>
         <div class="callback__button-wrapper">

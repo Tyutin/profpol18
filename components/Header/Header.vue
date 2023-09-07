@@ -3,13 +3,13 @@
         <div class="container">
             <div class="header__top">
                 <nuxt-link to="/" class="header__logo">
-                    <img src="./logo.svg" alt="Логотип Акватерра">
+                    <img src="img/logo.svg" alt="Логотип ПрофПол">
                 </nuxt-link>
                 <div class="header__contacts">
                     <span class="header__location">Ижевск</span>
                     <ul class="header__phone-list">
                         <!-- <li class="header__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li> -->
-                        <li class="header__phone"><a href="tel:+79829936621">8 (982) 993-66-21</a></li>
+                        <li class="header__phone"><a href="tel:+79226803890">8 (922) 680-38-90</a></li>
                     </ul>
                 </div>
                 <button class="header__toggle" :class="{'header__toggle-active' : isMenuOpen}" @click="toggleMenuOpen"/>

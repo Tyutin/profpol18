@@ -29,10 +29,12 @@
         >
           <div v-if="price.length" class="service__price-wrapper">
             <table class="service__price" border="0">
-              <tr v-for="item in price" :key="item.name">
-                <td border="0">{{item.name}}</td>
-                <td border="0">{{item.value}}</td>
-              </tr>
+              <tbody>
+                <tr v-for="item in price" :key="item.name">
+                  <td border="0">{{item.name}}</td>
+                  <td border="0">{{item.value}}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </Collapse>
@@ -172,7 +174,7 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
   &__collapse-list {
     display: flex;
     flex-direction: column;
-    margin: 40px 0 0;
+    margin: 20px 0 0;
     border: 2px solid $COLOR_GREEN;
     border-radius: 6px;
   }
@@ -232,7 +234,9 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 
   &__banner {
     display: flex;
-    margin: 40px 0;
+    margin: 40px 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
 
     &-reversed {
       flex-direction: row-reverse;

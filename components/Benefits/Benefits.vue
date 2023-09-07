@@ -15,7 +15,7 @@
                     <p class="benefits__text">поставленные сроки</p>
                 </li>
             </ul>
-            <img src="./man.webp" alt="Рабочий показывает лайк" class="benefits__man">
+            <img src="img/man.webp" alt="Рабочий показывает лайк" class="benefits__man">
         </div>
     </section>
 </template>
@@ -30,7 +30,7 @@
 .benefits {
     height: 390px;
     padding-bottom: 17px;
-    background-image: url('./benefits_bg.png');
+    background-image: url('../../static/img/benefits_bg.png');
     background-position: center;
     display: flex;
     align-items: flex-end;

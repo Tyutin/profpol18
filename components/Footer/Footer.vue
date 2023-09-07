@@ -3,7 +3,7 @@
         <Callback isfooter="footer" />
         <div class="footer__container">
             <div class="footer__half">
-                <img src="./logo-white.svg" alt="Логотип компании Акватерра" class="footer__logo">
+                <img src="img/logo-white.svg" alt="Логотип компании ПрофПол" class="footer__logo">
                 <p class="footer__subinfo">2015-{{year}} ПрофПол. <nobr>Все права защищены.</nobr></p>
                 <!-- <p class="footer__subinfo"><a href="https://buro-sv.ru" target="_blank">Производство сайта Бюро СВ</a></p> -->
             </div>
@@ -44,7 +44,7 @@
     max-width: 1020px;
     margin: 0 auto;
     padding: 75px 0 20px;
-    background-image: url('./footer-bg.svg');
+    background-image: url('../../static/img/footer-bg.svg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;

@@ -6,7 +6,7 @@
                 <p class="banner__subtitle">Строим уют и комфорт с нуля: профессиональная укладка полов всех видов. От современных дизайнов до классики - мы создаем прочные и стильные основы вашего пространства.</p>
                 <CallbackButton/>
             </div>
-            <img class="banner__image" src="./Banner.jpg" alt="Загородный дом с грунтовыми водами под ним">
+            <img class="banner__image" src="img/Banner.jpg" alt="Загородный дом с грунтовыми водами под ним">
         </div>
     </section>
 </template>
@@ -80,6 +80,7 @@
 
     &__image {
         height: 382px;
+        width: 55%;
 
         @media (max-width: 1019px) {
             margin-bottom: 30px;

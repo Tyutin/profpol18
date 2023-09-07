@@ -1,4 +1,4 @@
-# aquaterra_nuxt
+# profpol_nuxt
 
 ## Build Setup
 

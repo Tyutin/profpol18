@@ -4,16 +4,19 @@ if (!empty($_POST['name']) and !empty($_POST['phone'])) {
   $phone = htmlspecialchars($_POST["phone"]);
   $description = htmlspecialchars($_POST["description"]);
 
-  $sub = "Сообщение с сайта AQUATERRA18.RU";
-  $mes = "СООБЩЕНИЕ С САЙТА AQUATERRA18.RU\n
+  $subject = "Сообщение с сайта PROFPOL18.RU";
+  $message = "СООБЩЕНИЕ С САЙТА PROFPOL18.RU\n
     Имя отправителя: $name
     Телефон отправителя: $phone
     Описание: $description";
-  $headers = "From: СООБЩЕНИЕ С САЙТА AQUATERRA18.RU <site@aquaterra18.ru>\r\n";
+  $headers = "From: СООБЩЕНИЕ С САЙТА PROFPOL18.RU <site@profpol18.ru>\r\n";
 
-  if (mail("kerya.tyutin@yandex.ru", $sub, $mes, $headers) and mail("kerya.tyutin@yandex.ru", $sub, $mes, $headers)) {
+
+  // if (mail('kerya.tyutin@yandex.ru', $subject, $message, $headers) and mail('profpol18@mail.ru', $subject, $message, $headers)) {
+  if (mail('kerya.tyutin@yandex.ru', $subject, $message, $headers)) {
     http_response_code(200);
     exit;
+  } else {
     http_response_code(400);
     exit;
   }

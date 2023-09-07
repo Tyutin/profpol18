@@ -63,7 +63,7 @@
                     content: '';
                     width: 105px;
                     height: 14px;
-                    background-image: url('./strelka3.svg');
+                    background-image: url('../../static/img/icons/strelka.svg');
                 }
             }
         }

@@ -38,7 +38,7 @@
             bottom: 0;
             width: 100%;
             height: 7px;
-            background-image: url('./sectionWaveFull3.svg');
+            background-image: url('../../static/img/icons/sectionWave.svg');
             background-repeat: no-repeat;
             background-size: cover;
         }

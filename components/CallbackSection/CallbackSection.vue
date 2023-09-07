@@ -25,17 +25,17 @@
         content: "";
         width: 100%;
         height: 21.5px;
-        background-image: url('./waveFull3.svg');
         z-index: 1;
         background-repeat: no-repeat;
         background-size: cover;
     }
     &::after {
         bottom: -10px;
+        background-image: url('../../static/img/icons/waveAfter.svg');
     }
     &::before {
         top: -10px;
-        transform: rotate(180deg);
+        background-image: url('../../static/img/icons/waveBefore.svg');
     }
 }
 </style>
