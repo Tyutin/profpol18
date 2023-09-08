@@ -143,7 +143,7 @@
     @media screen and (max-width: $MEDIA_TABLET_TO_BIG_MOBILE) {
       position: absolute;
       right: 0;
-      top: -300%;
+      top: -400%;
       width: 100%;
       padding: 10px;
       background-color: #fff;

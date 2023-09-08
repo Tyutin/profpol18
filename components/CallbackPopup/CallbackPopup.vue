@@ -7,8 +7,8 @@
             v-if="mode === 'form'"
             @submit.prevent="submitForm"
         >
-            <p class="callback-popup__header">Оставьте заявку</p>
-            <p class="callback-popup__subheader">Чтобы получить консультацию или сделать заказ</p>
+            <p class="callback-popup__header">{{ callbackTitle }}</p>
+            <p class="callback-popup__subheader">{{ callbackSubtitle }}</p>
             <label class="callback-popup__label" :class="{'callback-popup__label_error': errors.name}">
                 <input
                     type="text"
@@ -51,7 +51,7 @@
         </div>
         <div class="callback-popup__error-screen" v-if="mode === 'error'">
             <p class="callback-popup__header">Что-то пошло <nobr>не так :(</nobr></p>
-            <p class="callback-popup__subheader">Попробуйте обновить страницу и отправить заявку ещё раз либо позвоните нам <br> <a href="tel:+79829936621">8 (982) 993-66-21</a></p>
+            <p class="callback-popup__subheader">Попробуйте обновить страницу и отправить заявку ещё раз либо позвоните нам <br> <a href="tel:+79226803890">8-922-680-38-90</a></p>
         </div>
     </div>
 </template>
@@ -73,7 +73,13 @@
         },
         computed: {
             callbackPopupIsOpen() {
-            return this.$store.state.popups.callbackPopupIsOpen
+              return this.$store.state.popups.callbackPopupIsOpen
+            },
+            callbackTitle () {
+              return this.$store.state.popups.title
+            },
+            callbackSubtitle () {
+              return this.$store.state.popups.subtitle
             }
         },
         methods: {
@@ -111,7 +117,11 @@
                     const formData = new FormData()
                     formData.append('name', this.name)
                     formData.append('phone', this.phone)
-                    formData.append('description', this.description)
+                    if(this.callbackTitle.includes('Заявка на услугу')) {
+                      formData.append('description', `${this.description}\n    Услуга: ${this.callbackSubtitle}`)
+                    } else {
+                      formData.append('description', this.description)
+                    }
                     this.isSubmitDisabled = true
                     const response = await fetch('/post.php', {
                         method: "POST",
@@ -126,157 +136,157 @@
 
 <style lang="scss" scoped>
 .callback-popup {
-    position: relative;
-    width: 424px;
-    padding: 30px 42px;
+  position: relative;
+  width: 424px;
+  padding: 30px 42px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+
+  @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
+    width: 100%;
+    height: 100%;
+    padding: 60px 15px 30px;
+  }
+
+  &__success-screen,
+  &__error-screen {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    border-radius: 6px;
+    padding-top: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  &__subheader {
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__submit {
+    font-size: 20px;
+    height: 45px;
+    background-color: #fe6600ce;
+    color: #fff;
+    border-width: 0;
+    border-radius: 8px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 8px 0px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:disabled {
+      opacity: 0.5;
+      background-color: #818181;
+
+      &:hover {
+        background-color: #818181;
+        cursor: default;
+      }
+    }
+
+    &:hover {
+      background-color: $COLOR_ORANGE;
+    }
 
     @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
-        width: 100%;
-        height: 100%;
-        padding: 60px 15px 30px;
+      font-size: 18px;
     }
 
-    &__success-screen,
-    &__error-screen {
-        display: flex;
-        flex-direction: column;
-        padding-top: 30px;
+    @media screen and (max-width: 359px) {
+      font-size: 16px;
+    }
+  }
+
+  &__label {
+    position: relative;
+    margin-bottom: 15px;
+
+    &_error {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__error-message {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    color: red;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    padding: 2px 3px;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+
+    &_error {
+      border-color: red;
+    }
+  }
+
+  &__textarea {
+    margin-bottom: 25px;
+    padding: 2px 3px;
+    resize: none;
+    font-size: 14px;
+  }
+
+  &__agreement {
+    font-size: 12px;
+    margin: 20px 0 0;
+    text-align: center;
+  }
+
+  &__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 30px;
+    width: 30px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border: unset;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
     }
 
-    &__form {
-        display: flex;
-        flex-direction: column;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: black;
     }
 
-    &__header {
-        margin-bottom: 10px;
-        font-size: 28px;
-        text-align: center;
+    &::after {
+      transform: rotate(45deg);
     }
 
-    &__subheader {
-        margin-bottom: 30px;
-        font-size: 20px;
-        text-align: center;
+    &::before {
+      transform: rotate(-45deg);
     }
-
-    &__submit {
-        font-size: 20px;
-        height: 45px;
-        background-color: #FE6600CE;
-        color: #fff;
-        border-width: 0;
-        border-radius: 8px;
-        text-transform: uppercase;
-        box-shadow: 2px 2px 8px 0px rgb(0 0 0 / 30%);
-        cursor: pointer;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-
-        &:disabled {
-          opacity: 0.5;
-          background-color: #818181;
-
-          &:hover {
-            background-color: #818181;
-            cursor: default;
-          }
-        }
-
-        &:hover{
-            background-color: $COLOR_ORANGE;
-        }
-
-        @media screen and (max-width: $MEDIA_TABLET_TO_MOBILE) {
-            font-size: 18px;
-        }
-
-        @media screen and (max-width: 359px) {
-            font-size: 16px;
-        }
-    }
-
-    &__label {
-        position: relative;
-        margin-bottom: 15px;
-
-        &_error {
-            padding-bottom: 15px;
-        }
-    }
-
-    &__error-message{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        font-size: 12px;
-        color: red;
-    }
-
-    &__input {
-        width: 100%;
-        height: 40px;
-        padding: 2px 3px;
-        font-size: 20px;
-        border: 1px solid gray;
-        border-radius: 4px;
-
-        &_error {
-            border-color: red;
-        }
-    }
-
-    &__textarea {
-        margin-bottom: 25px;
-        padding: 2px 3px;
-        resize: none;
-        font-size: 14px;
-    }
-
-    &__agreement {
-        font-size: 12px;
-        margin: 20px 0 0;
-        text-align: center;
-    }
-
-    &__close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        height: 30px;
-        width: 30px;
-        opacity: 0.5;
-        transition: all 0.3s ease;
-        border: unset;
-        background-color: transparent;
-        cursor: pointer;
-
-        &:hover {
-            opacity: 1;
-        }
-
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            top: 14px;
-            left: 0;
-            width: 30px;
-            height: 2px;
-            background: black;
-        }
-
-        &::after {
-            transform: rotate(45deg);
-        }
-
-        &::before {
-            transform: rotate(-45deg);
-        }
-    }
+  }
 }
 </style>

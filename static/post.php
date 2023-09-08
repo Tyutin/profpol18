@@ -12,8 +12,8 @@ if (!empty($_POST['name']) and !empty($_POST['phone'])) {
   $headers = "From: СООБЩЕНИЕ С САЙТА PROFPOL18.RU <site@profpol18.ru>\r\n";
 
 
-  // if (mail('kerya.tyutin@yandex.ru', $subject, $message, $headers) and mail('profpol18@mail.ru', $subject, $message, $headers)) {
-  if (mail('kerya.tyutin@yandex.ru', $subject, $message, $headers)) {
+  if (mail('kerya.tyutin@yandex.ru', $subject, $message, $headers) and mail('profpol18@mail.ru', $subject, $message, $headers)) {
+    // if (mail('kerya.tyutin@yandex.ru', $subject, $message, $headers)) {
     http_response_code(200);
     exit;
   } else {

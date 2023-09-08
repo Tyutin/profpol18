@@ -61,7 +61,7 @@
         </Collapse>
       </div>
       <div class="service__collapse-item">
-        <button class="service__collapse-toggle">Заказать</button>
+        <button class="service__collapse-toggle" @click="openServicePopup">Заказать</button>
       </div>
     </div>
 
@@ -168,6 +168,11 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
         priceIsOpen: false,
       }
     },
+    methods: {
+      openServicePopup () {
+        this.$store.commit('popups/openServicePopup', {title: 'Заявка на услугу', subtitle: this.service.title})
+      },
+    }
   }
 </script>
 
