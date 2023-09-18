@@ -3,8 +3,8 @@
         <h2 class="callback__heading">Появились вопросы? <nobr>Звоните нам!</nobr></h2>
         <div class="callback__phone-list-wrapper">
             <div class="callback__phone-icon">
-                <img v-if="isfooter == 'footer'" src="img/icons/icon_phone_lightblue.svg" alt="Иконка телефона">
-                <img v-else src="img/icons/icon_phone3.svg" alt="Иконка телефона">
+                <img loading="lazy" v-if="isfooter == 'footer'" src="img/icons/icon_phone_lightblue.svg" alt="Иконка телефона">
+                <img loading="lazy" v-else src="img/icons/icon_phone3.svg" alt="Иконка телефона">
             </div>
             <ul class="callback__phone-list">
                 <!-- <li class="callback__phone"><a href="tel:+73412000000">8 (3412) 00-00-00</a></li> -->

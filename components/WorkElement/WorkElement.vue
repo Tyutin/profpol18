@@ -1,7 +1,7 @@
 <template>
     <div class="work-element">
         <div class="work-element__image-wrapper " :class="{ 'work-element__image-wrapper_with-arrow': arrow }">
-            <img :src="`img/icons/howWeWork/${image}`" alt="">
+            <img loading="lazy" :src="`img/icons/howWeWork/${image}`" alt="">
         </div>
         <p class="work-element__text">
             <span class="work-element__index" v-if="index">

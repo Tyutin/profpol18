@@ -3,20 +3,20 @@
         <Callback isfooter="footer" />
         <div class="footer__container">
             <div class="footer__half">
-                <img src="img/logo-white.svg" alt="Логотип компании ПрофПол" class="footer__logo">
+                <img loading="lazy" src="img/logo-white.svg" alt="Логотип компании ПрофПол" class="footer__logo">
                 <p class="footer__subinfo">2015-{{year}} ПрофПол. <nobr>Все права защищены.</nobr></p>
                 <!-- <p class="footer__subinfo"><a href="https://buro-sv.ru" target="_blank">Производство сайта Бюро СВ</a></p> -->
             </div>
             <div class="footer__half footer__half-contacts">
                 <div class="footer__contact-wrapper">
                     <span class="footer__contact">
-                        <img src="img/icons/icon_location_white.svg" alt="Иконка локации" class="footer__icon footer__icon_loc">
+                        <img loading="lazy" src="img/icons/icon_location_white.svg" alt="Иконка локации" class="footer__icon footer__icon_loc">
                         Ижевск
                     </span>
                 </div>
                 <div class="footer__contact-wrapper">
                     <a href="mailto:profpol18@mail.ru" class="footer__contact">
-                        <img src="img/icons/icon_mail_white.svg" alt="Иконка электронной почты" class="footer__icon footer__icon_mail">
+                        <img loading="lazy" src="img/icons/icon_mail_white.svg" alt="Иконка электронной почты" class="footer__icon footer__icon_mail">
                         profpol18@mail.ru
                     </a>
                 </div>

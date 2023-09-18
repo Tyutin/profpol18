@@ -15,7 +15,7 @@
                     <p class="benefits__text">поставленные сроки</p>
                 </li>
             </ul>
-            <img src="img/man.webp" alt="Рабочий показывает лайк" class="benefits__man">
+            <img loading="lazy" src="img/man.webp" alt="Рабочий показывает лайк" class="benefits__man">
         </div>
     </section>
 </template>

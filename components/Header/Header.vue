@@ -3,7 +3,7 @@
         <div class="container">
             <div class="header__top">
                 <nuxt-link to="/" class="header__logo">
-                    <img src="img/logo.svg" alt="Логотип ПрофПол">
+                    <img loading="lazy" src="img/logo.svg" alt="Логотип ПрофПол">
                 </nuxt-link>
                 <div class="header__contacts">
                     <span class="header__location">Ижевск</span>

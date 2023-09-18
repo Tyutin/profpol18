@@ -4,7 +4,7 @@
     <h2 class="service__title">{{service.title}}</h2>
 
     <div class="service__banner"  :class="{'service__banner-reversed' : service.reversed}">
-      <img :src="`/img/services/${service.bannerImage}`" :alt="service.title" class="service__image">
+      <img loading="lazy" :src="`/img/services/${service.bannerImage}`" :alt="service.title" class="service__image">
       <div class="service__banner-info">
         <p v-for="text in service.bannerText" :key="text" class="service__banner-text">{{text}}</p>
       </div>
@@ -53,7 +53,7 @@
             <VueSlickCarousel v-if="service.cases" v-bind="settings" class="slick-works">
               <div v-for="(image, imageIndex) in service.cases" :key="imageIndex">
                 <div class="slick-works__image-wrap" @click="sliderIndex = imageIndex">
-                  <img :src="image.src" :alt="image.alt" class="slick-works__image">
+                  <img loading="lazy" :src="image.src" :alt="image.alt" class="slick-works__image">
                 </div>
               </div>
             </VueSlickCarousel>

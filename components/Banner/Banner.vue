@@ -6,7 +6,7 @@
                 <p class="banner__subtitle">Строим уют и комфорт с нуля: профессиональная укладка полов всех видов. От современных дизайнов до классики - мы создаем прочные и стильные основы вашего пространства.</p>
                 <CallbackButton/>
             </div>
-            <img class="banner__image" src="img/Banner.jpg" alt="Загородный дом с грунтовыми водами под ним">
+            <img loading="lazy" class="banner__image" src="img/Banner.jpg" alt="Мужчина укладывает ламинат">
         </div>
     </section>
 </template>
