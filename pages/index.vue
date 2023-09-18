@@ -160,6 +160,86 @@ export default {
               src: 'img/cases/ukladka-kvarcvinila/kvartc5.jpg',
               title: 'Кварцвинил ',
               alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc6.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc7.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc8.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc9.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc10.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc11.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc12.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc13.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc14.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc15.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc16.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc17.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc18.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc19.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc20.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
+            },
+            {
+              src: 'img/cases/ukladka-kvarcvinila/kvartc21.jpg',
+              title: 'Кварцвинил ',
+              alt: 'Пример работ по укладке кварцвинила'
             }
           ]
         },
@@ -265,6 +345,88 @@ export default {
               value: 'от 350р м/кв'
             },
           ],
+          cases: [
+            {
+              src: 'img/cases/kovrolin/kovrolin1.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin2.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin3.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin4.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin5.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin6.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin7.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin8.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin9.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin10.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin11.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin12.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin13.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin14.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin15.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+            {
+              src: 'img/cases/kovrolin/kovrolin16.jpg',
+              title: 'Ковролин',
+              alt: 'Пример работ по укладке ковролина'
+            },
+          ]
         },
         linoleum: {
           id: 'linoleum',
@@ -309,6 +471,78 @@ export default {
               value: 'от 450р м/кв'
             },
           ],
+          cases: [
+            {
+              src: 'img/cases/linoleum/linoleum-v-aktovom-zale-1.jpg',
+              title: 'Линолеум в актовом зале',
+              alt: 'Пример работ по укладке линолеума в актовом зале'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-v-aktovom-zale-2.jpg',
+              title: 'Линолеум в актовом зале',
+              alt: 'Пример работ по укладке линолеума в актовом зале'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-v-aktovom-zale-3.jpg',
+              title: 'Линолеум в актовом зале',
+              alt: 'Пример работ по укладке линолеума в актовом зале'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-v-aktovom-zale-4.jpg',
+              title: 'Линолеум в актовом зале',
+              alt: 'Пример работ по укладке линолеума в актовом зале'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-v-aktovom-zale-5.jpg',
+              title: 'Линолеум в актовом зале',
+              alt: 'Пример работ по укладке линолеума в актовом зале'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene1.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene2.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene3.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene4.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene5.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene6.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene7.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene8.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+            {
+              src: 'img/cases/linoleum/linoleum-na-arene9.jpg',
+              title: 'Линолеум в киберспорт арене Polygone',
+              alt: 'Пример работ по укладке линолеума в киберспорт арене'
+            },
+          ]
         },
         svarkaLinoleuma: {
           id: 'svarka-linoleuma',
@@ -332,7 +566,7 @@ export default {
         polirovkaLinoleuma: {
           id: 'polirovka-linoleuma',
           title: 'Полировка линолеума',
-          bannerImage: 'polirovka-linoleuma.png',
+          bannerImage: 'polirovka-linoleuma.jpg',
           reversed: true,
           bannerText: [
             'Мы единственная компания в Ижевске которая профессионально и с гарантией полирует коммерческий линолеум. Отсутствие ухода за покрытием и его повседневная эксплуатация ведет к быстрому износу и изменению первоначального внешнего вида линолеума.',
@@ -412,6 +646,23 @@ export default {
               value: 'от 500р м/пог'
             },
           ],
+          cases: [
+            {
+              src: 'img/cases/plintus/plintus1.jpg',
+              title: 'Укладка плинтуса',
+              alt: 'Пример работ по укладке плинтуса'
+            },
+            {
+              src: 'img/cases/plintus/plintus2.jpg',
+              title: 'Укладка плинтуса',
+              alt: 'Пример работ по укладке плинтуса'
+            },
+            {
+              src: 'img/cases/plintus/plintus3.jpg',
+              title: 'Укладка плинтуса',
+              alt: 'Пример работ по укладке плинтуса'
+            },
+          ]
         },
         dopRaboty: {
           id: 'podgotovka-pola',
@@ -496,6 +747,28 @@ export default {
             {
               name: 'Демонтаж плинтуса деревянного',
               value: 'от 70р м/пог'
+            },
+          ],
+          cases: [
+            {
+              src: 'img/cases/podgotovka/podgotovka1.jpg',
+              title: 'Подготовка основания пола',
+              alt: 'Пример работ по подготовке основания пола'
+            },
+            {
+              src: 'img/cases/podgotovka/podgotovka2.jpg',
+              title: 'Подготовка основания пола',
+              alt: 'Пример работ по подготовке основания пола'
+            },
+            {
+              src: 'img/cases/podgotovka/podgotovka3.jpg',
+              title: 'Демонтаж паркета',
+              alt: 'Пример работ по подготовке основания пола'
+            },
+            {
+              src: 'img/cases/podgotovka/podgotovka4.jpg',
+              title: 'Демонтаж паркета',
+              alt: 'Пример работ по подготовке основания пола'
             },
           ]
         },

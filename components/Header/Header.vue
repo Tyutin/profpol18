@@ -84,6 +84,7 @@
   & .container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 5px;
   }
 
   &__toggle {

@@ -283,6 +283,7 @@ import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
   &__image {
     display: block;
     width: 50%;
+    object-fit: cover;
 
     @media (max-width: 1023px) {
       max-height: 500px;
